@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Resume Builder</title>
+  <link rel="stylesheet"  href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div>
+    <h1><b>Dynamic Resume Builder</b></h1>
+    <form id="RESUME">
+
+      <fieldset>
+        <legend><b>Professional Summary</b></legend>
+        <textarea id="objective" name="Professional Summary" rows="4" required></textarea><br>
+      </fieldset>
+
+      <fieldset>
+        <legend><b>Personal Information</b></legend>
+        <label for="name">*Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"><br>
+        <label for="email">*Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required><br>
+        <label for="phone">*Contact Info:</label>
+        <input type="tel" id="phone" placeholder="Enter your contact number" required><br>
+        <label for="linkedIn">*LinkedIn:</label>
+        <input type="url" id="linkedIn" placeholder="Enter your LinkedIn profile" required><br>
+      </fieldset>
+
+      <fieldset>
+        <legend><b>Work Experience</b></legend>
+        <label for="organization">*Organization:</label>
+        <input type="text" id="organization" required><br>
+        <label for="role">*Role:</label>
+        <input type="text" id="role" required><br>
+        <label for="fromYear">*From Year:</label>
+        <input type="number" id="fromYear" required><br>
+        <label for="toYear">*To Year:</label>
+        <input type="number" id="toYear" required><br>
+        <label>*Experience Details:</label>
+        <textarea id="experienceDetails" rows="3"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend><b>Education</b></legend>
+        <label for="degree">*Degree:</label>
+        <input type="text" id="degree" required><br>
+        <label for="university">*University:</label>
+        <input type="text" id="university" required><br>
+        <label for="passingYear">*Passing Year:</label>
+        <input type="number" id="passingYear" required><br>
+        <label for="cgpa">*CGPA/Percentage:</label>
+        <input type="number" id="cgpa" required><br>
+      </fieldset>
+
+      <fieldset>
+        <legend><b>Skills</b></legend>
+        <label>*Soft Skills:</label><br>
+        <input type="text" id="softSkill1" required><br>
+        <input type="text" id="softSkill2" required><br>
+        <input type="text" id="softSkill3" required><br>
+        <label>*Technical Skills:</label><br>
+        <input type="text" id="techSkill1" required><br>
+        <input type="text" id="techSkill2" required><br>
+        <input type="text" id="techSkill3" required><br>
+      </fieldset>
+
+      <fieldset>
+        <legend><b>Languages</b></legend>
+        <input type="text" id="language1" placeholder="Enter the language you're fluent in" required><br>
+        <input type="text" id="language2" placeholder="Enter the language you can communicate in" required><br>
+      </fieldset>
+
+      <fieldset>
+        <legend><b>Professional Certifications</b></legend>
+        <input type="text" id="cert1" required><br>
+        <input type="text" id="cert2" required><br>
+        <input type="text" id="cert3" required><br>
+      </fieldset>
+
+      <button type="button" id="generate">Generate</button>
+    </form>
+    <hr>
+    <div id="resume-output"></div>
+  </div>
+</body>
+</html>
